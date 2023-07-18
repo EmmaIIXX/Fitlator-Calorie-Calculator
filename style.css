@@ -1,0 +1,81 @@
+body {
+  background-color: #272440;
+  color: #fffcf5;
+  font-family: "Rajdhani", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  color: #fffcf5;
+}
+
+.input-group {
+  font-family: "Rajdhani", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.intro {
+  background-color: #8580a6;
+  color: #fffcf5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  background-color: #99939b;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fffcf5;
+}
+
+.input-group input[type="number"],
+.input-group select {
+  width: 100%;
+  padding: 5px;
+}
+
+.calculate-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fffcf5;
+  color: #272440;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #d2d6d9;
+}
+
+.result p {
+  margin: 5px 0;
+}

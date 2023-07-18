@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+        <h1>Calorie Calculator</h1>
+      </div>
+      <div class="intro">
+        <p>
+          Welcome to the Calorie Calculator! This tool helps you determine your
+          daily calorie needs based on various factors such as age, weight,
+          height, and activity level.
+        </p>
+        <p>
+          Knowing your daily calorie requirements can assist you in managing
+          your weight effectively. Whether you aim to lose weight, maintain your
+          current weight, or even gain weight, this calculator can provide you
+          with the recommended calorie intake.
+        </p>
+      </div>
+      <div class="calculator">
+        <div class="input-group">
+          <label for="gender">Gender:</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" min="0" />
+        </div>
+        <div class="input-group">
+          <label for="weight">Weight (in kg):</label>
+          <input type="number" id="weight" min="0" />
+        </div>
+        <div class="input-group">
+          <label for="height">Height (in cm):</label>
+          <input type="number" id="height" min="0" />
+        </div>
+        <div class="input-group">
+          <label for="activity">Activity Level:</label>
+          <select id="activity">
+            <option value="low">Low (sedentary lifestyle)</option>
+            <option value="moderate">
+              Moderate (light exercise/sports 1-3 days/week)
+            </option>
+            <option value="high">
+              High (moderate exercise/sports 3-5 days/week)
+            </option>
+          </select>
+        </div>
+        <button class="calculate-btn" onclick="calculateCalories()">
+          Calculate
+        </button>
+        <div id="result" class="result">
+          <p id="maintenance-calories"></p>
+          <p id="weight-loss-calories"></p>
+          <p id="weight-gain-calories"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
